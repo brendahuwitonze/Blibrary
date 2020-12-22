@@ -74,5 +74,6 @@
         android:layout_marginBottom="285dp"
         android:layout_toStartOf="@+id/textview"
         android:layout_toLeftOf="@+id/textview"
-    android:text="signup" />
+        android:width="55dp"
+        android:text="signup" />
 </RelativeLayout>

@@ -21,7 +21,6 @@ public class MainActivity extends AppCompatActivity {
     @BindView(R.id.editText2) EditText password;
     @BindView(R.id.textview) TextView tx1;
     @BindView(R.id.button3) Button b3;
-    int counter = 3;
 
 //    Button b1;
 //    EditText username,password;
@@ -46,18 +45,6 @@ public class MainActivity extends AppCompatActivity {
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(username.getText().toString().equals("admin") &&
-                        password.getText().toString().equals("admin")) {
-                    Toast.makeText(getApplicationContext(),
-                            "Redirecting...", Toast.LENGTH_SHORT).show();
-                }
-                    else{
-                        Toast.makeText(getApplicationContext(), "Wrong Credentials"
-                                ,Toast.LENGTH_SHORT).show();
-                    }
-                if (counter == 0) {
-                    b1.setEnabled(false);
-                }
                 Intent intent = new Intent(MainActivity.this, booksAvailable.class);
                 startActivity(intent);
 
@@ -66,13 +53,11 @@ public class MainActivity extends AppCompatActivity {
         b3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, login_Activty.class);
 
+
+                startActivity(intent);
             }
-
-            Intent intent = new Intent(MainActivity.this, login_Activty.class);
-
-
-
         });
     }
 }
