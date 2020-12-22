@@ -20,7 +20,7 @@ public class booksAvailable extends AppCompatActivity {
 
 //    private ListView bListView;
 
-    private String[] books = new String[] {"harrypoter", "onceupon_time"};
+    private String[] books = new String[] {"harrypoter", "onceupon_time","Gone With The Wind by Margaret","It Ends with Us by Colleen Hoover","Me Before You by Jojo Moyes"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

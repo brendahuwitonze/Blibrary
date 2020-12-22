@@ -43,12 +43,26 @@
         android:layout_marginEnd="-57dp"
         android:layout_marginRight="-57dp"
         android:ems="10"
-        android:hint="Password"
+        android:hint="email"
         android:inputType="textPassword"
         android:textColorHint="#ffff299f" />
 
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-275dp"
+        android:layout_marginRight="-275dp"
+        android:layout_marginBottom="28dp"
+        android:layout_toStartOf="@+id/textview"
+        android:layout_toLeftOf="@+id/textview"
+        android:width="55dp"
+        android:text="signup" />
+
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/editTextTextPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/editText"
@@ -62,18 +76,7 @@
         android:layout_marginEnd="-57dp"
         android:layout_marginRight="-57dp"
         android:ems="10"
-        android:inputType="textEmailAddress" />
+        android:textColorHint="#ffff299f"
+        android:inputType="textPassword" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="-275dp"
-        android:layout_marginRight="-275dp"
-        android:layout_marginBottom="285dp"
-        android:layout_toStartOf="@+id/textview"
-        android:layout_toLeftOf="@+id/textview"
-        android:width="55dp"
-        android:text="signup" />
 </RelativeLayout>
