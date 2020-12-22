@@ -1,20 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent" android:layout_height="match_parent"
     android:background="@drawable/library">
 
 
-
     <TextView
-        android:id="@+id/textview"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:text="INTRESTING BOOKS"
-        android:textSize="35dp" />
+        android:text="Create account" />
 
     <EditText
         android:id="@+id/editText"
@@ -53,43 +47,32 @@
         android:inputType="textPassword"
         android:textColorHint="#ffff299f" />
 
-<!--    <Button-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="login"-->
-<!--        android:id="@+id/button"-->
-<!--        android:layout_marginLeft="10dp"-->
-<!--        android:layout_alignParentBottom="true"-->
-<!--        android:layout_toRightOf ="@+id/textview"-->
-<!--        android:layout_toStartOf="@+id/textview" />-->
-
-<!--    <Button-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="signup"-->
-<!--        android:id="@+id/button3"-->
-<!--        android:layout_alignParentBottom="true"-->
-<!--        android:layout_toLeftOf="@+id/textview"-->
-<!--        android:layout_toEndOf="@+id/textview" />-->
-    <Button
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="login"
-        android:id="@+id/button"
+        android:layout_below="@+id/editText"
+        android:layout_alignEnd="@+id/editText"
+        android:layout_alignRight="@+id/editText"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="57dp"
+        android:layout_marginLeft="57dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="-57dp"
+        android:layout_marginRight="-57dp"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-275dp"
+        android:layout_marginRight="-275dp"
+        android:layout_marginBottom="285dp"
+        android:layout_toStartOf="@+id/textview"
         android:layout_toLeftOf="@+id/textview"
-        android:layout_toStartOf="@+id/textview" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Cancel"
-        android:id="@+id/button3"
-        android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@+id/textview"
-        android:layout_toEndOf="@+id/textview" />
-
-
-
-
+    android:text="signup" />
 </RelativeLayout>
