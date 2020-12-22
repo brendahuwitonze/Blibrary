@@ -12,6 +12,7 @@ import butterknife.ButterKnife;
 
 public class login_Activty extends AppCompatActivity {
     @BindView(R.id.button2) Button b2;
+
 //    Button b2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +21,7 @@ public class login_Activty extends AppCompatActivity {
         ButterKnife.bind(this);
 
 
-        b2= (Button)findViewById(R.id.button2);
+//        b2= (Button)findViewById(R.id.button2);
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
