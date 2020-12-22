@@ -3,16 +3,19 @@
     android:layout_width="match_parent" android:layout_height="match_parent"
     android:background="@drawable/library">
 
-    <TextView
-        android:id="@+id/searchEditText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:text="books" />
-
     <ListView
         android:id="@+id/listView"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/searchEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="cursive"
+        android:text="Avaiable books"
+        android:textSize="18sp" />
+
+
 </RelativeLayout>
